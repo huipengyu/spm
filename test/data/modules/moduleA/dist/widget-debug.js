@@ -1,4 +1,4 @@
-define("#moduleA/0.9.17/daparser-debug", ["$-debug"], function(require, exports) {
+define("test/moduleA/0.9.17/daparser-debug", ["$-debug"], function(require, exports) {
 
     // DAParser
     // --------
@@ -176,8 +176,7 @@ define("#moduleA/0.9.17/daparser-debug", ["$-debug"], function(require, exports)
 
 });
 
-
-define("#moduleA/0.9.17/auto-render-debug", ["$-debug"], function(require, exports) {
+define("test/moduleA/0.9.17/auto-render-debug", ["$-debug"], function(require, exports) {
 
     var $ = require('$-debug');
 
@@ -235,8 +234,7 @@ define("#moduleA/0.9.17/auto-render-debug", ["$-debug"], function(require, expor
 
 });
 
-
-define("#moduleA/0.9.17/widget-debug", ["./daparser-debug", "./auto-render-debug", "#base/0.9.16/base-debug", "#events/0.9.1/events-debug", "#class/0.9.2/class-debug", "$-debug"], function(require, exports, module) {
+define("test/moduleA/0.9.17/widget-debug", ["./daparser-debug", "./auto-render-debug", "arale/base/1.0.1/base-debug", "arale/class/1.0.0/class-debug", "arale/events/1.0.0/events-debug", "$-debug"], function(require, exports, module) {
 
     // Widget
     // ---------
@@ -245,7 +243,7 @@ define("#moduleA/0.9.17/widget-debug", ["./daparser-debug", "./auto-render-debug
     // 和 methods。Widget 基类约定了这四要素创建时的基本流程和最佳实践。
 
 
-    var Base = require('#base/0.9.16/base-debug');
+    var Base = require('arale/base/1.0.1/base-debug');
     var $ = require('$-debug');
     var DAParser = require('./daparser-debug');
     var AutoRender = require('./auto-render-debug');
